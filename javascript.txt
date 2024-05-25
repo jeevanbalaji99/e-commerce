@@ -1,0 +1,22 @@
+step 1
+Here, we initialize an array of objects called data, which contains information about different products,
+including their id, name,img (image URL), price, and cat (category).
+
+
+step 2 Selecting DOM Elements
+We use document.querySelector to select and store references to various HTML elements:
+
+productsContainer: The container where products will be displayed.
+searchInput: The input field for searching products.
+categoriesContainer: The container for displaying product categories.
+priceRange: The input element for setting the price range.
+priceValue: The element that displays the current price range value.
+
+
+
+step 3 Displaying Products
+displayProducts: This function takes an array of filteredProducts and generates HTML to display each product.
+productsContainer.innerHTML: Sets the inner HTML of the productsContainer to the generated HTML string.
+filteredProducts.map(...): Maps over the array of products and returns a string of HTML for each product.
+.join(""): Joins the array of HTML strings into a single HTML string.
+displayProducts(data): Calls the function initially with the full product list.
